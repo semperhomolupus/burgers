@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+html(lang="ru")
+
+  block vars
+
+  include _head
+
+  include ../mixins/_svg-sprite
+
+  body
+
+    .wrapper
+
+      include ../components/header
+      
+      div.content
+
+        block content
+
+      include ../components/footer
+
+    include _end
