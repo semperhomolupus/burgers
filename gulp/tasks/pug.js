@@ -24,6 +24,7 @@ module.exports = function () {
         p.gp.htmlhint({
           "attr-lowercase": false,
           "spec-char-escape": false,
+          "tagname-lowercase": false
         })
       ) // Валидация
       .pipe(p.gp.htmlhint.failAfterError())
