@@ -1,1 +1,61 @@
-.header {}
+.header {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  &__logo {
+    display: block;
+  }
+
+  &__logo-img {
+    display: block;
+    width: 92px;
+    height: 69px;
+  }
+
+  &__menu {
+    display: none;
+  }
+
+  &__menu-item {
+    display: block;
+  }
+
+  &__menu-link {
+    display: block;
+  }
+
+  &__buy {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__burger {
+    display: inline-block;
+    vertical-align: top;
+    width: 24px;
+    height: 22px;
+  }
+
+  &__switcher {
+    display: block;
+  }
+
+  &__switcher-item {
+    display: block;
+
+    &--active {
+    }
+  }
+}

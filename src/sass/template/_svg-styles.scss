@@ -1,0 +1,54 @@
+.svg-sprite {
+  width: inherit;
+  height: inherit;
+  fill: inherit;
+}
+
+.svg-sprite-menu {
+  width: 24px;
+  height: 24px;
+  fill: $white;
+}
+
+.svg-sprite-meat {
+  width: 77px;
+  height: 69px;
+
+  @media (min-width: $screen-sm) {
+    width: 97px;
+    height: 89px;
+  }
+}
+
+.svg-sprite-hand {
+  width: 63px;
+  height: 75px;
+
+  @media (min-width: $screen-sm) {
+    width: 73px;
+    height: 85px;
+  }
+}
+
+.svg-sprite-natural {
+  width: 78px;
+  height: 65px;
+
+  @media (min-width: $screen-sm) {
+    width: 88px;
+    height: 75px;
+  }
+}
+
+.svg-sprite-burger {
+  width: 46px;
+  height: 44px;
+  fill: $white;
+}
+
+.svg-sprite-kkal {
+  width: 60px;
+  height: 60px;
+  fill: $white;
+  opacity: 0.5;
+}

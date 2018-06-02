@@ -4,18 +4,17 @@ $white: #ffffff;
 $black: #000000;
 //
 $color1: $black;
-$color2: $white;
-$color3: $white;
-$color4: $white;
-$color5: $white;
+$color2: #e45028;
+$color3: #f9b43b;
+$color4: #e25028;
+$color5: #8ac03e;
 //
 // ################ COLORS END ################
 // ################ FONTS START ################
 //
-$font-basic: Arial,
-sans-serif;
-$font1: $font-basic;
-$font2: $font-basic;
+$font-basic: Ubuntu, Arial, sans-serif;
+$font1: Lifehack, Arial, sans-serif;
+$font2: Gagalin, Arial, sans-serif;
 $font3: $font-basic;
 //
 $font-size-body: 14px;
@@ -26,8 +25,8 @@ $line-height: 1.2;
 // ################ ADAPTIVE START ################
 //
 $screen-xs: 320px;
-$screen-sm: 768px;
-$screen-md: 1024px;
+$screen-sm: 480px;
+$screen-md: 768px;
 $screen-lg: 1366px;
 //
 // ################ ADAPTIVE END ################

@@ -1,1 +1,73 @@
-.best {}
+.best {
+  display: block;
+  background-image: url("../img/best-bg-small.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+  &__content {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    font-size: 0;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 35px;
+  }
+
+  &__list {
+    display: block;
+  }
+
+  &__item {
+    display: block;
+
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__image {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+
+    &--meat {
+      fill: $color4;
+    }
+
+    &--hand {
+      fill: $color3;
+    }
+
+    &--natural {
+      fill: $color5;
+    }
+  }
+
+  &__descr {
+    display: inline-block;
+    vertical-align: top;
+    width: 67%;
+  }
+
+  &__subtitle {
+    display: block;
+    font-family: $font1;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.46px;
+    letter-spacing: -0.6px;
+  }
+
+  &__text {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24.06px;
+  }
+}

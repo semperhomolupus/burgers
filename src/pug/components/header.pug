@@ -1,7 +1,7 @@
 header.header
-  nav.header__nav
+  nav.container.header__nav
     .header__logo
-      +svg("logo")
+      img(src="img/svg/logo.svg", alt="Burgers").header__logo-img
     ul.header__menu
       li.header__menu-item
         a(href="#").header__menu-link О нас
@@ -15,8 +15,9 @@ header.header
         a(href="#").header__menu-link Отзывы
       li.header__menu-item
         a(href="#").header__menu-link Контакты
-    button(type="button").header__buy Заказать
+    button(type="button").button.header__buy Заказать
     button(type="button").header__burger
+      +svg("menu")
   ul.header__switcher
     li.header__switcher-item.header__switcher-item--active
     li.header__switcher-item

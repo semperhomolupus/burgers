@@ -1,1 +1,110 @@
-.team {}
+.team {
+  display: block;
+  padding: 0;
+  background-image: url("../img/team-bg-small.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(#2f3234, 0.93);
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 32px;
+    color: $color3;
+  }
+
+  &__list {
+    display: block;
+    text-align: center;
+  }
+
+  &__guy {
+    display: block;
+    color: $white;
+
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+
+    &--active {
+      color: $color3;
+
+      .team__guy-info {
+        display: block;
+      }
+
+      .team__guy-name::before {
+        border-top-color: transparent;
+        border-bottom-color: $color3;
+      }
+    }
+  }
+
+  &__guy-name {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    font-family: $font2;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 29.13px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      vertical-align: top;
+      position: absolute;
+      top: 8px;
+      left: -25px;
+      border: 7px solid transparent;
+      border-top-color: $color3;
+      transition: 0.3s;
+    }
+  }
+
+  &__guy-info {
+    display: none;
+  }
+
+  &__guy-photo {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 15px auto 0 auto;
+    border-radius: 50%;
+  }
+
+  &__guy-descr {
+    display: block;
+    max-width: 90%;
+    margin: 20px auto 0 auto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24.11px;
+  }
+
+  &__guy-position {
+    display: block;
+    margin-bottom: 10px;
+    color: $white;
+    font-weight: 700;
+  }
+
+  &__guy-about {
+    display: block;
+    color: $white;
+  }
+}
