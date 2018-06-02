@@ -1,1 +1,51 @@
 section.section.delivery
+  .delivery__content
+    h2.section__title.delivery__title Закажите доставку
+    form(action="#" method="POST").delivery__form
+      .delivery__form-left
+        .delivery__form-row
+          label.delivery__form-label
+            span.delivery__form-text Имя
+            input(type="text").delivery__input.delivery__input--name
+          label.delivery__form-label
+            span.delivery__form-text Телефон
+            input(type="text").delivery__input.delivery__input--phone
+        .delivery__form-row
+          label.delivery__form-label
+            span.delivery__form-text Улица
+            input(type="text").delivery__input.delivery__input--street
+        .delivery__form-row
+          label.delivery__form-label
+            span.delivery__form-text Дом
+            input(type="text").delivery__input.delivery__input--house
+          label.delivery__form-label
+            span.delivery__form-text Корпус
+            input(type="text").delivery__input.delivery__input--corpus
+          label.delivery__form-label
+            span.delivery__form-text Квартира
+            input(type="text").delivery__input.delivery__input--apartment
+          label.delivery__form-label
+            span.delivery__form-text Этаж
+            input(type="text").delivery__input.delivery__input--floor
+      .delivery__form-right
+        .delivery__comment
+          label.delivery__form-label
+            span.delivery__form-text Комментарий
+            textarea.delivery__textarea
+        .delivery__radio-buttons
+          .delivery__change
+            label.delivery__form-label
+              input(type="radio" name="payment" value="cash")
+              span.delivery__form-text Потребуется сдача
+          .delivery__card
+            label.delivery__form-label
+              input(type="radio" name="payment" value="card" selected)
+              span.delivery__form-text Потребуется сдача
+        .delivery__call
+          label.delivery__form-label
+            input(type="checkbox" name="call" selected)
+            span.delivery__form-text Потребуется сдача
+        .delivery__buttons
+          button(type="submit").delivery__submit Заказать
+          button(type="reset").delivery__reset Очистить
+        
