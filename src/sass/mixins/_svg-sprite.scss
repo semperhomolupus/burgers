@@ -1,0 +1,89 @@
+// Шаблон для создания спрайта _svg-sprite.scss в таске svg-sprite по руководству http://glivera-team.github.io/svg/2016/06/13/svg-sprites-2.html
+
+.svg-sprite {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+.svg-sprite-arrow-scroll {
+	font-size:(14.479/10)*1rem;
+	width:(28.685/14.479)*1em;
+}
+.svg-sprite-beef {
+	font-size:(39.212/10)*1rem;
+	width:(44/39.212)*1em;
+}
+.svg-sprite-buns {
+	font-size:(30.317/10)*1rem;
+	width:(48/30.317)*1em;
+}
+.svg-sprite-burger {
+	font-size:(44.625/10)*1rem;
+	width:(45.748/44.625)*1em;
+}
+.svg-sprite-cheese {
+	font-size:(34.138/10)*1rem;
+	width:(38.126/34.138)*1em;
+}
+.svg-sprite-cucumber {
+	font-size:(37.754/10)*1rem;
+	width:(42/37.754)*1em;
+}
+.svg-sprite-drops {
+	font-size:(241.369/10)*1rem;
+	width:(450.527/241.369)*1em;
+}
+.svg-sprite-fb {
+	font-size:(36.711/10)*1rem;
+	width:(36.711/36.711)*1em;
+}
+.svg-sprite-hand {
+	font-size:(85.875/10)*1rem;
+	width:(73/85.875)*1em;
+}
+.svg-sprite-inst {
+	font-size:(36.664/10)*1rem;
+	width:(36.663/36.664)*1em;
+}
+.svg-sprite-kkal {
+	font-size:(60.178/10)*1rem;
+	width:(60/60.178)*1em;
+}
+.svg-sprite-logo {
+	font-size:(74.317/10)*1rem;
+	width:(98.265/74.317)*1em;
+}
+.svg-sprite-map-marker {
+	font-size:(57.727/10)*1rem;
+	width:(46/57.727)*1em;
+}
+.svg-sprite-meat {
+	font-size:(89.246/10)*1rem;
+	width:(96.428/89.246)*1em;
+}
+.svg-sprite-natural {
+	font-size:(75.534/10)*1rem;
+	width:(88/75.534)*1em;
+}
+.svg-sprite-phone {
+	font-size:(11/10)*1rem;
+	width:(11/11)*1em;
+}
+.svg-sprite-salad {
+	font-size:(38.638/10)*1rem;
+	width:(38/38.638)*1em;
+}
+.svg-sprite-sauce {
+	font-size:(43.416/10)*1rem;
+	width:(40.189/43.416)*1em;
+}
+.svg-sprite-twitter {
+	font-size:(31.21/10)*1rem;
+	width:(37.453/31.21)*1em;
+}
+.svg-sprite-vk {
+	font-size:(72/10)*1rem;
+	width:(126/72)*1em;
+}
