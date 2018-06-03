@@ -8,14 +8,35 @@
     padding: 115px 45px;
   }
 
+  @media (min-width: $screen-lg) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 50px;
+  }
+
   &__slider {
     display: block;
     max-width: 700px;
     margin: 0 auto;
+
+    @media (min-width: $screen-lg) {
+      max-width: 100%;
+    }
   }
 
   &__slide {
     display: block;
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+    }
   }
 
   &__info {
@@ -27,6 +48,12 @@
     @media (min-width: $screen-md) {
       max-width: 500px;
       margin: 0 auto;
+    }
+
+    @media (min-width: $screen-lg) {
+      position: absolute;
+      height: 450px;
+      flex-direction: column;
     }
   }
 
@@ -114,6 +141,12 @@
       width: 404px;
       height: 263px;
     }
+
+    @media (min-width: $screen-lg) {
+      width: 505px;
+      height: 329px;
+      margin-right: 20px;
+    }
   }
 
   &__burger-img {
@@ -132,6 +165,11 @@
       max-width: 400px;
       line-height: 63.89px;
     }
+
+    @media (min-width: $screen-lg) {
+      margin: 0 0 45px 0;
+      text-align: left;
+    }
   }
 
   &__text {
@@ -147,11 +185,21 @@
       max-width: 570px;
       margin: 0 auto 50px auto;
     }
+
+    @media (min-width: $screen-lg) {
+      max-width: 500px;
+      text-align: left;
+      margin: 0 0 35px 0;
+    }
   }
 
   &__price {
     display: block;
     text-align: center;
+
+    @media (min-width: $screen-lg) {
+      text-align: left;
+    }
   }
 
   &__amount {

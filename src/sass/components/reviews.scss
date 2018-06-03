@@ -7,6 +7,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 100%;
   }
 
   &__item {
@@ -30,6 +31,11 @@
     @media (min-width: $screen-md) {
       height: 256px;
     }
+
+    @media (min-width: $screen-lg) {
+      width: 25%;
+      height: 50%;
+    }
   }
 
   &__content {
@@ -42,6 +48,11 @@
     transition: 0.3s;
     opacity: 0;
     text-align: center;
+
+    @media (min-width: $screen-lg) {
+      padding-top: 50px;
+      text-align: left;
+    }
   }
 
   &__name {
@@ -59,6 +70,10 @@
       min-height: 0;
       margin-bottom: 10px;
     }
+
+    @media (min-width: $screen-lg) {
+      text-align: left;
+    }
   }
 
   &__text {
@@ -74,17 +89,32 @@
       line-height: 24px;
       text-align: center;
     }
+
+    @media (min-width: $screen-lg) {
+      text-align: left;
+    }
   }
 
   &__read-more {
     display: inline-block;
     vertical-align: top;
     padding: 12px 16px;
+    border-radius: 5px;
     background-color: #2f3234;
     color: $white;
     font-size: 13px;
     font-weight: 500;
     line-height: 13px;
     text-transform: uppercase;
+    transition: 0.3s;
+
+    &:hover {
+      color: $white;
+      background-color: darken(#2f3234, 15%);
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    text-align: left;
   }
 }

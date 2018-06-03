@@ -18,6 +18,10 @@
     display: block;
   }
 
+  &__content {
+    display: block;
+  }
+
   &__logo-img {
     display: block;
     width: 92px;
@@ -38,12 +42,13 @@
 
   &__buy {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
+    margin-right: 30px;
   }
 
   &__burger {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     width: 24px;
     height: 22px;
   }

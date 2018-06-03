@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
   background-position: center center;
 
+  @media (min-width: $screen-lg) {
+    background-image: url("../img/footer-bg.jpg");
+  }
+
   &__container {
     display: block;
     padding: 20px;

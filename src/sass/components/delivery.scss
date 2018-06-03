@@ -10,6 +10,10 @@
     padding-top: 152px;
   }
 
+  @media (min-width: $screen-lg) {
+    background-image: url("../img/delivery-bg.jpg");
+  }
+
   &__content {
     display: block;
   }
@@ -31,11 +35,23 @@
     display: block;
     max-width: 470px;
     margin: 0 auto;
+
+    @media (min-width: $screen-lg) {
+      font-size: 0;
+      max-width: 940px;
+    }
   }
 
   &__form-left {
     display: block;
     margin-bottom: 20px;
+
+    @media (min-width: $screen-lg) {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+      padding-right: 10px;
+    }
   }
 
   &__form-row {
@@ -50,6 +66,7 @@
   &__form-label {
     display: block;
     flex-grow: 1;
+    cursor: pointer;
 
     &:not(:last-child) {
       margin-right: 10px;
@@ -106,11 +123,22 @@
 
   &__form-right {
     display: block;
+
+    @media (min-width: $screen-lg) {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+      padding-left: 10px;
+    }
   }
 
   &__comment {
     display: block;
     margin-bottom: 40px;
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 20px;
+    }
   }
 
   &__textarea {
@@ -126,6 +154,10 @@
 
     @media (min-width: $screen-md) {
       text-align: left;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 20px;
     }
   }
 
@@ -148,6 +180,10 @@
     @media (min-width: $screen-md) {
       text-align: left;
     }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 20px;
+    }
   }
 
   &__buttons {
@@ -168,9 +204,26 @@
   &__reset {
     display: inline-block;
     vertical-align: middle;
+
     color: $white;
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $white;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding: 4px 15px;
+      border: 1px solid transparent;
+      border-radius: 5px;
+
+      &:hover {
+        border: 1px solid $white;
+      }
+    }
   }
 }

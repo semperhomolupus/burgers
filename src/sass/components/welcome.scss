@@ -10,9 +10,21 @@
   background-repeat: no-repeat;
   background-position: center center;
 
+  @media (min-width: $screen-lg) {
+    background-image: url("../img/welcome-bg.jpg");
+  }
+
   &__content {
     display: block;
     text-align: center;
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+    }
   }
 
   &__burger {
@@ -31,6 +43,10 @@
     @media (min-width: $screen-md) {
       width: 417px;
       height: 424px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-right: 20px;
     }
   }
 
@@ -54,6 +70,10 @@
 
   &__info {
     display: block;
+
+    @media (min-width: $screen-lg) {
+      max-width: 410px;
+    }
   }
 
   &__title {
@@ -62,6 +82,10 @@
 
     @media (min-width: $screen-md) {
       margin-bottom: 30px;
+    }
+
+    @media (min-width: $screen-lg) {
+      text-align: left;
     }
   }
 
@@ -86,6 +110,11 @@
       letter-spacing: -1.63px;
       line-height: 60.12px;
     }
+
+    @media (min-width: $screen-lg) {
+      max-width: 100%;
+      text-align: left;
+    }
   }
 
   &__read-more {
@@ -102,6 +131,12 @@
 
     @media (min-width: $screen-md) {
       bottom: 40px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 30px;
+      height: 30px;
+      margin-left: -15px;
     }
   }
 }
