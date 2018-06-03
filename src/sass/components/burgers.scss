@@ -109,6 +109,7 @@
     width: 300px;
     height: 190px;
     margin: 0 auto 26px auto;
+
     @media (min-width: $screen-sm) {
       width: 404px;
       height: 263px;
@@ -128,6 +129,8 @@
 
     @media (min-width: $screen-md) {
       margin: 0 auto 45px auto;
+      max-width: 400px;
+      line-height: 63.89px;
     }
   }
 

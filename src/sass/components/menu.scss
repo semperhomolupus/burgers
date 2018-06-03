@@ -53,6 +53,10 @@
       width: 80px;
     }
 
+    @media (min-width: $screen-md) {
+      height: 1024px;
+    }
+
     &::after {
       content: "";
       display: block;
@@ -97,6 +101,8 @@
 
     @media (min-width: $screen-sm) {
       width: 80px;
+      bottom: 90px;
+      right: -4px;
     }
   }
 

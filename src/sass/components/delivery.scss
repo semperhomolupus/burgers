@@ -6,6 +6,10 @@
   background-repeat: no-repeat;
   background-position: center center;
 
+  @media (min-width: $screen-md) {
+    padding-top: 152px;
+  }
+
   &__content {
     display: block;
   }
@@ -16,10 +20,17 @@
     margin: 0 auto;
     margin-bottom: 30px;
     color: $color3;
+
+    @media (min-width: $screen-md) {
+      max-width: 100%;
+      margin-bottom: 50px;
+    }
   }
 
   &__form {
     display: block;
+    max-width: 470px;
+    margin: 0 auto;
   }
 
   &__form-left {
@@ -112,6 +123,10 @@
     display: block;
     margin-bottom: 30px;
     text-align: center;
+
+    @media (min-width: $screen-md) {
+      text-align: left;
+    }
   }
 
   &__change {
@@ -129,11 +144,19 @@
     display: block;
     margin-bottom: 30px;
     text-align: center;
+
+    @media (min-width: $screen-md) {
+      text-align: left;
+    }
   }
 
   &__buttons {
     display: block;
     text-align: center;
+
+    @media (min-width: $screen-md) {
+      text-align: left;
+    }
   }
 
   &__submit {

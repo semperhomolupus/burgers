@@ -27,6 +27,11 @@
       height: 339px;
       margin: 0 auto 50px auto;
     }
+
+    @media (min-width: $screen-md) {
+      width: 417px;
+      height: 424px;
+    }
   }
 
   &__burger-drops {
@@ -36,6 +41,10 @@
 
     @media (min-width: $screen-sm) {
       top: 53px;
+    }
+
+    @media (min-width: $screen-md) {
+      top: 70px;
     }
   }
 
@@ -72,6 +81,10 @@
     @media (min-width: $screen-md) {
       max-width: 60%;
       margin: 0 auto;
+      font-size: 65px;
+      font-weight: 500;
+      letter-spacing: -1.63px;
+      line-height: 60.12px;
     }
   }
 
