@@ -4,29 +4,29 @@ section.section.delivery
     form(action="#" method="POST").delivery__form
       .delivery__form-left
         .delivery__form-row
-          label.delivery__form-label
+          label.delivery__form-label.delivery__form-label--name
             span.delivery__form-text Имя
-            input(type="text").delivery__input.delivery__input--name
-          label.delivery__form-label
+            input(type="text").delivery__input
+          label.delivery__form-label.delivery__form-label--phone
             span.delivery__form-text Телефон
-            input(type="text").delivery__input.delivery__input--phone
+            input(type="text").delivery__input
         .delivery__form-row
-          label.delivery__form-label
+          label.delivery__form-label.delivery__form-label--street
             span.delivery__form-text Улица
-            input(type="text").delivery__input.delivery__input--street
+            input(type="text").delivery__input
         .delivery__form-row
-          label.delivery__form-label
+          label.delivery__form-label.delivery__form-label--house
             span.delivery__form-text Дом
-            input(type="text").delivery__input.delivery__input--house
-          label.delivery__form-label
+            input(type="text").delivery__input
+          label.delivery__form-label.delivery__form-label--corpus
             span.delivery__form-text Корпус
-            input(type="text").delivery__input.delivery__input--corpus
-          label.delivery__form-label
+            input(type="text").delivery__input
+          label.delivery__form-label.delivery__form-label--apartment
             span.delivery__form-text Квартира
-            input(type="text").delivery__input.delivery__input--apartment
-          label.delivery__form-label
+            input(type="text").delivery__input
+          label.delivery__form-label.delivery__form-label--floor
             span.delivery__form-text Этаж
-            input(type="text").delivery__input.delivery__input--floor
+            input(type="text").delivery__input
       .delivery__form-right
         .delivery__comment
           label.delivery__form-label
@@ -36,16 +36,19 @@ section.section.delivery
           .delivery__change
             label.delivery__form-label
               input(type="radio" name="payment" value="cash")
+              i
               span.delivery__form-text Потребуется сдача
           .delivery__card
             label.delivery__form-label
               input(type="radio" name="payment" value="card" selected)
-              span.delivery__form-text Потребуется сдача
+              i
+              span.delivery__form-text Оплата по карте
         .delivery__call
           label.delivery__form-label
             input(type="checkbox" name="call" selected)
-            span.delivery__form-text Потребуется сдача
+            i
+            span.delivery__form-text Не перезванивать
         .delivery__buttons
-          button(type="submit").delivery__submit Заказать
+          button(type="submit").button.delivery__submit Заказать
           button(type="reset").delivery__reset Очистить
         

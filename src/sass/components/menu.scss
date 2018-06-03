@@ -1,1 +1,116 @@
-.menu {}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+  padding: 0;
+
+  background-image: url("../img/menu-bg-small.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &__title {
+    display: block;
+    position: absolute;
+    top: 114px;
+    left: 23px;
+    color: $white;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__tab {
+    display: block;
+    width: 65px;
+    height: 800px;
+    position: relative;
+    flex-shrink: 0;
+
+    @media (min-width: $screen-sm) {
+      width: 80px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.5);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    &--1 {
+      background-image: url("../img/menu/menu-tab-1-mobile.jpg");
+    }
+
+    &--2 {
+      background-image: url("../img/menu/menu-tab-2-mobile.jpg");
+    }
+
+    &--3 {
+      background-image: url("../img/menu/menu-tab-3-mobile.jpg");
+    }
+  }
+
+  &__subtitle {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    height: 65px;
+    width: 290px;
+    z-index: 2;
+    bottom: 158px;
+    right: -117px;
+
+    color: $white;
+    white-space: nowrap;
+    transform: rotate(270deg);
+
+    @media (min-width: $screen-sm) {
+      width: 80px;
+    }
+  }
+
+  &__pane {
+    display: none;
+    padding: 60px 35px;
+    background-color: rgba(#2f3234, 0.93);
+  }
+
+  &__descr {
+    display: block;
+    color: $white;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+}

@@ -1,26 +1,35 @@
 .burgers {
   display: block;
   background-color: #f9b43b;
-  background-image: linear-gradient(
-    to top,
-    #f9b43b 0%,
-    #eb8c38 48%,
-    #f9b43b 74%,
-    #f9b43b 100%
-  );
+  background-image: $color6;
   padding: 50px 10px;
+
+  @media (min-width: $screen-md) {
+    padding: 115px 45px;
+  }
+
   &__slider {
     display: block;
+    max-width: 700px;
+    margin: 0 auto;
   }
+
   &__slide {
     display: block;
   }
+
   &__info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 20px;
+
+    @media (min-width: $screen-md) {
+      max-width: 500px;
+      margin: 0 auto;
+    }
   }
+
   &__composition {
     display: block;
     width: 91px;
@@ -29,6 +38,7 @@
     background-color: rgba($color4, 0.4);
     border-radius: 5px;
   }
+
   &__composition-btn {
     display: block;
     span {
@@ -40,10 +50,12 @@
       line-height: 28.12px;
     }
   }
+
   &__kkal {
     display: block;
     position: relative;
   }
+
   &__kkal-count {
     display: block;
     position: absolute;
@@ -55,6 +67,7 @@
     font-weight: 400;
     line-height: 24.02px;
   }
+
   &__kkal-text {
     display: block;
     position: absolute;
@@ -66,24 +79,31 @@
     font-weight: 400;
     line-height: 24.02px;
   }
+
   &__composition-popup {
     display: none;
   }
+
   &__composition-close {
     display: block;
   }
+
   &__composition-list {
     display: block;
   }
+
   &__composition-item {
     display: block;
   }
+
   &__composition-name {
     display: block;
   }
+
   &__composition-count {
     display: block;
   }
+
   &__burger {
     display: block;
     width: 300px;
@@ -94,16 +114,23 @@
       height: 263px;
     }
   }
+
   &__burger-img {
     display: block;
   }
+
   &__title {
     display: block;
     max-width: 300px;
     margin: 0 auto 35px auto;
     color: $white;
     line-height: 52.64px;
+
+    @media (min-width: $screen-md) {
+      margin: 0 auto 45px auto;
+    }
   }
+
   &__text {
     display: block;
     margin-bottom: 16px;
@@ -112,11 +139,18 @@
     font-weight: 300;
     line-height: 24.02px;
     text-align: center;
+
+    @media (min-width: $screen-md) {
+      max-width: 570px;
+      margin: 0 auto 50px auto;
+    }
   }
+
   &__price {
     display: block;
     text-align: center;
   }
+
   &__amount {
     display: inline-block;
     vertical-align: middle;
@@ -124,13 +158,20 @@
     color: $color4;
     font-family: $font2;
   }
+
   &__amount-count {
     display: inline-block;
     vertical-align: baseline;
     margin-right: 7px;
     font-size: 50px;
     letter-spacing: -1.25px;
+
+    @media (min-width: $screen-md) {
+      font-size: 72px;
+      letter-spacing: -1.79px;
+    }
   }
+
   &__amount-text {
     display: inline-block;
     vertical-align: baseline;
@@ -138,10 +179,21 @@
     font-weight: 400;
     line-height: 28.24px;
     letter-spacing: -0.6px;
+
+    @media (min-width: $screen-md) {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 28.05px;
+    }
   }
+
   &__buy {
     display: inline-block;
     vertical-align: middle;
     margin-top: 10px;
+
+    @media (min-width: $screen-md) {
+      margin-top: 20px;
+    }
   }
 }

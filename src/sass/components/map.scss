@@ -1,1 +1,10 @@
-.map {}
+.map {
+  display: block;
+  padding: 0;
+
+  &__container {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}

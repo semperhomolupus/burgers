@@ -17,6 +17,7 @@
 
   &__burger {
     display: block;
+    position: relative;
     width: 260px;
     height: 270px;
     margin: 15px auto;
@@ -24,7 +25,17 @@
     @media (min-width: $screen-sm) {
       width: 333px;
       height: 339px;
-      margin: 50px auto;
+      margin: 0 auto 50px auto;
+    }
+  }
+
+  &__burger-drops {
+    position: absolute;
+    top: 45px;
+    left: -13px;
+
+    @media (min-width: $screen-sm) {
+      top: 53px;
     }
   }
 
@@ -39,6 +50,10 @@
   &__title {
     display: block;
     color: $color3;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 30px;
+    }
   }
 
   &__descr {
@@ -53,6 +68,11 @@
       font-size: 54px;
       line-height: 50.05px;
     }
+
+    @media (min-width: $screen-md) {
+      max-width: 60%;
+      margin: 0 auto;
+    }
   }
 
   &__read-more {
@@ -66,5 +86,9 @@
     border-bottom: 2px solid $white;
     border-right: 2px solid $white;
     transform: rotate(45deg);
+
+    @media (min-width: $screen-md) {
+      bottom: 40px;
+    }
   }
 }

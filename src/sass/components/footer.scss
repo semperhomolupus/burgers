@@ -1,1 +1,62 @@
-.footer {}
+.footer {
+  display: block;
+  background-image: url("../img/footer-bg-small.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &__container {
+    display: block;
+    padding: 20px;
+  }
+
+  &__info {
+    display: block;
+    margin-bottom: 18px;
+    color: $white;
+    text-align: center;
+  }
+
+  &__address {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 23.83px;
+  }
+
+  &__phone {
+    display: block;
+    color: $color4;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  &__socials {
+    display: block;
+  }
+
+  &__socials-list {
+    display: block;
+    text-align: center;
+  }
+
+  &__socials-item {
+    display: inline-block;
+    vertical-align: middle;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__socials-link {
+    display: block;
+    opacity: 0.3;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
