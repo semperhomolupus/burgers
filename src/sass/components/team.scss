@@ -13,7 +13,7 @@
   &__content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     align-content: center;
 
@@ -59,19 +59,6 @@
     &:not(:last-child) {
       margin-bottom: 35px;
     }
-
-    &--active {
-      color: $color3;
-
-      .team__guy-info {
-        display: block;
-      }
-
-      .team__guy-name::before {
-        border-top-color: transparent;
-        border-bottom-color: $color3;
-      }
-    }
   }
 
   &__guy-name {
@@ -101,6 +88,15 @@
       transition: 0.3s;
     }
 
+     &--active {
+      color: $color3;
+
+      &::before {
+        border-top-color: transparent;
+        border-bottom-color: $color3;
+      }
+    }
+
     @media (min-width: $screen-lg) {
       font-size: 14px;
       font-weight: 400;
@@ -110,6 +106,15 @@
         top: 9px;
         border: 5px solid transparent;
         border-top-color: $color3;
+      }
+
+      &--active {
+      color: $color3;
+      
+        &::before {
+          border-top-color: transparent;
+          border-bottom-color: $color3;
+        }
       }
     }
   }

@@ -1,11 +1,6 @@
 {
-  "extends": [
-    "semistandard",
-    "prettier"
-  ],
-  "plugins": [
-    "prettier"
-  ],
+  "extends": ["semistandard", "prettier"],
+  "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": [
       "error",
@@ -16,5 +11,11 @@
         "bracketSpacing": true
       }
     ]
+  },
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jquery": true
   }
 }

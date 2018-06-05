@@ -52,6 +52,7 @@
     flex-direction: row;
     position: relative;
     overflow: hidden;
+    
   }
 
   &__tab {
@@ -138,9 +139,16 @@
   }
 
   &__pane {
-    display: none;
+    display: block;
+    width: 0;
     padding: 60px 35px;
+    overflow: hidden;
     background-color: rgba(#2f3234, 0.93);
+    transition: 0.3s;
+
+    &--active {
+      width: 100%;
+    }
   }
 
   &__descr {
