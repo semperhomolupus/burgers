@@ -71,6 +71,7 @@
 
     @media (min-width: $screen-md) {
       top: 70px;
+      transform: scale(1);
 
       &:hover {
         transform: scale(1.03);
