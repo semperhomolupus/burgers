@@ -16,18 +16,5 @@ $(function() {
     });
   };
 
-  app.menuAccordion = function() {
-    const menuTab = $(".menu__tab");
-
-    menuTab.on("click", e => {
-      var $this = $(e.currentTarget);
-      menuTab.next().removeClass("menu__pane--active");
-      menuTab.next().addClass("visuallyhidden");
-      $this.next().addClass("menu__pane--active");
-      $this.next().removeClass("visuallyhidden");
-    });
-  };
-
   app.teamAccordion();
-  app.menuAccordion();
 });
