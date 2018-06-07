@@ -33,6 +33,26 @@ body {
   overflow-x: hidden;
 }
 
+.pages-wrapper {
+   display: block;
+   position: relative;
+   height: 100vh;
+   overflow: hidden;
+}
+
+.pages {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0);
+  will-change: transform;
+  transform: translateZ(0);
+  transition: 1s;
+}
+
 .content {
   flex: 1;
   height: 100%;

@@ -56,6 +56,10 @@
 
     @media (min-width: $screen-lg) {
       margin-right: 20px;
+
+      &:hover .welcome__burger-drops{
+        transform: scale(1.03);
+      }
     }
   }
 
@@ -73,9 +77,6 @@
       top: 70px;
       transform: scale(1);
 
-      &:hover {
-        transform: scale(1.03);
-      }
     }
   }
 

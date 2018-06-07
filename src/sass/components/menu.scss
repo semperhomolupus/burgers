@@ -154,6 +154,10 @@
     &--active {
       width: 100%;
     }
+
+    @media (min-width: $screen-lg) {
+      min-width: 50vw;
+    }
   }
 
   &__descr {
