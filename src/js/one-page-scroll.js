@@ -5,7 +5,7 @@ $(function() {
   const sections = pages.find("section");
   const dotClassActive = "dot--active";
   let activeSectionNumber = 0;
-  const duration = 700;
+  const duration = 200;
 
   let isMobile = $(window).width() <= 768 || $(window).height() <= 640;
   if (isMobile) return false;
