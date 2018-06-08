@@ -7,6 +7,9 @@ $(function() {
   let activeSectionNumber = 0;
   const duration = 700;
 
+  let isMobile = $(window).width() <= 768 || $(window).height() <= 640;
+  if (isMobile) return false;
+
   const generateDots = function() {
     sections.each(function() {
       let dot = $("<li>", {

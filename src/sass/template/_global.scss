@@ -36,27 +36,38 @@ body {
 .pages-wrapper {
    display: block;
    position: relative;
-   height: 100vh;
-   overflow: hidden;
+
+  @media (min-width: $screen-md) {
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 
 .pages {
   display: block;
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  will-change: transform;
-  transform:  translate(0), translateZ(0);
-  transition: 0.7s;
+
+  @media (min-width: $screen-md) {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    will-change: transform;
+    transform:  translate(0), translateZ(0);
+    transition: 0.7s;
+  }
 }
 
 .dots {
-  position: fixed;
-  top: 90px;
-  right: 50px;
-  z-index: 1;
+  display: none;
+
+  @media (min-width: $screen-md) {
+    display: block;
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    z-index: 1;
+  }
 }
 
 .dot {
@@ -68,7 +79,7 @@ body {
   background-color: #fff;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 0 2px 1px rgba($color7, 0.7);
+  box-shadow: 0 0 2px 1px rgba($color7, 0.4);
 
   
 
@@ -88,7 +99,7 @@ body {
   &:hover::after,
   &--active::after {
     border: 1px solid $white;
-    box-shadow: 0 0 2px 1px rgba($color7, 0.7);
+    box-shadow: 0 0 2px 1px rgba($color7, 0.4);
   }
 }
 
