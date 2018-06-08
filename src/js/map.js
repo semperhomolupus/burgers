@@ -13,10 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
     (myPlacemark0 = new ymaps.Placemark(
       [59.91294808, 30.4706362],
       {
-        hintContent: "Собственный значок метки",
-        balloonContent: "Это красивая метка",
-      },
-      {
         // Опции.
         // Необходимо указать данный тип макета.
         iconLayout: "default#image",
@@ -31,10 +27,6 @@ document.addEventListener("DOMContentLoaded", function() {
     )),
       (myPlacemark1 = new ymaps.Placemark(
         [59.94467433, 30.37974021],
-        {
-          hintContent: "Собственный значок метки",
-          balloonContent: "Это красивая метка",
-        },
         {
           // Опции.
           // Необходимо указать данный тип макета.
