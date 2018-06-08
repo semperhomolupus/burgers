@@ -7,7 +7,7 @@ $(function() {
   let activeSectionNumber = 0;
   const duration = 200;
 
-  let isMobile = $(window).width() <= 768 || $(window).height() <= 640;
+  let isMobile = $(window).width() <= 768 || $(window).height() <= 540;
   if (isMobile) return false;
 
   const generateDots = function() {

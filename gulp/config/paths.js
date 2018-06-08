@@ -13,6 +13,7 @@ module.exports = {
     svg: source + "/img/svg/*.svg",
     spritePNG: source + "/img/png-sprite/*.png",
     spriteSVG: source + "/img/svg-sprite/*.svg",
+    php: source + "/php/*.php",
   },
   build: {
     styles: build + "/css",
@@ -24,6 +25,7 @@ module.exports = {
     spritePNG: build + "/img/sprite",
     spriteSVG: build + "/img",
     spriteCSS: source + "/sass/mixins", // Генерируемый файл с данными для PNG-спрайта
+    php: build,
   },
   watch: {
     sass: source + "/sass/**/*.scss",
@@ -34,5 +36,6 @@ module.exports = {
     svg: source + "/img/svg/*.svg",
     spritePNG: source + "/img/png-sprite",
     spriteSVG: source + "/img/svg-sprite",
+    php: source + "/php/*.php",
   },
 };

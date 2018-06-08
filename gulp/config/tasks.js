@@ -9,6 +9,7 @@ module.exports = [
   "./gulp/tasks/png-sprite", // Спрайты из PNG
   "./gulp/tasks/svg-sprite", // Спрайты из SVG
   "./gulp/tasks/delete", // Удаляем build
+  "./gulp/tasks/php", // Удаляем build
   "./gulp/tasks/watch", // Наблюдение за файлами
   "./gulp/tasks/reload", // Перезагрузка browserSync
   "./gulp/tasks/build", // Удаляем билд и собираем все таски
