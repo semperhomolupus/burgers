@@ -47,10 +47,49 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(0);
   will-change: transform;
-  transform: translateZ(0);
-  transition: 1s;
+  transform:  translate(0), translateZ(0);
+  transition: 0.7s;
+}
+
+.dots {
+  position: fixed;
+  top: 90px;
+  right: 50px;
+  z-index: 1;
+}
+
+.dot {
+  display: block;
+  position: relative;
+  width: 6px;
+  height: 6px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px 1px rgba($color7, 0.7);
+
+  
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: 0.2s;
+  }
+
+  &:hover::after,
+  &--active::after {
+    border: 1px solid $white;
+    box-shadow: 0 0 2px 1px rgba($color7, 0.7);
+  }
 }
 
 .content {
